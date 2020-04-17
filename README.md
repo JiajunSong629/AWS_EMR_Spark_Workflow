@@ -35,7 +35,7 @@ aws emr create-cluster --name "your-cluster-name" \
     --use-default-roles ##--auto-terminate
 ```
 
-- Open `addstep.sh` and change the variable `clusterid` with your cluster id. In the terminal run the following. This command submits the job again to the running cluster.
+- Change the variable `clusterid` with your cluster id and run the following. This command submits the job one more time to the running cluster.
 
 
 ```shell
@@ -47,7 +47,7 @@ aws emr add-steps --cluster-id $clusterid \
 
 ```
 
-- Again open `terminate.sh`, change the variable `clusterid` with your cluster id. In the terminal run the following. This step terminates the cluster to stop being charged for the cluster.
+- Change the variable `clusterid` with your cluster id and run the following. This step terminates the cluster to stop being charged for the cluster.
 
 ```shell
 #!/bin/bash
