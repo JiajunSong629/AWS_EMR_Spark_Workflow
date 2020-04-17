@@ -59,11 +59,11 @@ aws emr terminate-clusters --cluster-ids $clusterid
 
 ### About the repo
 
-- pyspark_job.py: The main Spark job you submitted to the cluster. Here in the demo this job reads the Amazon book review data, apply filtering and wrangling and output the results to S3 bucket.
-- emr_bootstrap.sh: Dependecies you would the cluster environment to be preinstalled. It would be useful if you want to use the notebook instances.
-- submit_job.sh: Create the cluster and submit a job to it.
-- addstep.sh: Add another step(job) to the running cluster.
-- terminate.sh: Terminate the cluster.
+- [`pyspark_job.py`](https://github.com/JiajunSong629/AWS_EMR_Spark_Workflow/blob/master/pyspark_job.py): The main Spark job you submitted to the cluster. Here in the demo this job reads the Amazon book review data, apply filtering and wrangling and output the results to S3 bucket.
+- [`emr_bootstrap.sh`](https://github.com/JiajunSong629/AWS_EMR_Spark_Workflow/blob/master/emr_bootstrap.sh): Dependecies you would the cluster environment to be preinstalled. It would be useful if you want to use the notebook instances.
+- [`submit_job.sh`](https://github.com/JiajunSong629/AWS_EMR_Spark_Workflow/blob/master/submit_job.sh): Create the cluster and submit a job to it.
+- [`addstep.sh`](https://github.com/JiajunSong629/AWS_EMR_Spark_Workflow/blob/master/addstep.sh): Add another step(job) to the running cluster.
+- [`terminate.sh`](https://github.com/JiajunSong629/AWS_EMR_Spark_Workflow/blob/master/terminate.sh): Terminate the cluster.
 
 
 ## Resources:
